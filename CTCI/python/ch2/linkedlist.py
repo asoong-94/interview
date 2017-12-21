@@ -30,6 +30,7 @@ class UnorderedList:
 		temp.setNext(self.head)
 		# temp is the new head
 		self.head = temp
+		return temp
 
 	def size(self):
 		current = self.head
