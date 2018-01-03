@@ -17,5 +17,29 @@ def fibonacci(n):
 		FibArray.append(temp)
 		return temp
 
+def fibonacci2(n):
+	"""
+	still dynamic programming 
+	only store previous 2 numbers
+	take the first 2 numbers as 0 and 1
+	"""
+	a = 0
+	b = 1
+	if n == 0:
+		return a
+	elif n == 1: 
+		return b
+	else:
+		for i in range(2,n):
+			# remember only the previous 2 numbers
+			# update as you go
+			c = a + b
+			a = b
+			b = c
+		return b
+
+
 if __name__ == '__main__':
 	print fibonacci(100)
+	print fibonacci2(100)
+
