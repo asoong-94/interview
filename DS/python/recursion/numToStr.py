@@ -10,4 +10,9 @@ def numToStr(number, base):
 	else:
 		return numToStr(number//base, base) + bases[number%base]
 
-print(numToStr(1234,10))
+
+if __name__ == '__main__':
+	print(numToStr(1234,10))
+	print(numToStr(8,2))
+
+

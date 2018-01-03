@@ -4,4 +4,6 @@ def reverseStr(string):
 	else:
 		return string[-1] + reverseStr(string[:-1])
 
-print reverseStr("abcde")
+if __name__ == '__main__':
+	print reverseStr("abcde")
+	print reverseStr("123456789")
